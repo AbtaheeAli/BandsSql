@@ -22,3 +22,5 @@ JOIN "Bands" ON "Albums"."BandId" = "Bands"."Id";
 --FROM "Albums"
 --JOIN "Bands" ON "Albums"."BandId" = "Bands"."Id";
 
+SELECT * FROM "Albums" ORDER BY "Albums"."ReleaseDate"; 
+
