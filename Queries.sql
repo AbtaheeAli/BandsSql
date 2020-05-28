@@ -13,3 +13,12 @@ INSERT INTO "Albums" ("Title", "IsExplicit", "ReleaseDate", "BandId") VALUES ('C
 UPDATE "Bands" SET "IsSigned" = false where "Name" = 'Migos';
 
 UPDATE "Bands" SET "IsSigned" = true where "Name" = 'Migos';
+
+SELECT "Albums"."Title", "Bands"."Name"
+FROM "Albums"
+JOIN "Bands" ON "Albums"."BandId" = "Bands"."Id";
+-- Could also be 
+--SELECT "Albums"."Title", "Bands"."Name"
+--FROM "Albums"
+--JOIN "Bands" ON "Albums"."BandId" = "Bands"."Id";
+
