@@ -24,3 +24,8 @@ JOIN "Bands" ON "Albums"."BandId" = "Bands"."Id";
 
 SELECT * FROM "Albums" ORDER BY "Albums"."ReleaseDate"; 
 
+SELECT * FROM "Bands" WHERE "IsSigned" = 'true';
+
+SELECT * FROM "Bands" WHERE "IsSigned" = 'false';
+
+
