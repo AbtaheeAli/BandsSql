@@ -1,6 +1,6 @@
 CREATE TABLE "Albums" ("Id" SERIAL PRIMARY KEY, "Title" TEXT, "IsExplicit" BOOLEAN, "ReleaseDate" DATE);
 
-CREATE TABLE "Band" ("Id" SERIAL PRIMARY KEY, "Name" TEXT, "CountryOfOrigin" TEXT, "NumberOfMembers" INT, "Website" TEXT, "Style" TEXT, "IsSigned" BOOLEAN, "ContactName" TEXT, "ContactPhoneNumber" TEXT);
+CREATE TABLE "Bands" ("Id" SERIAL PRIMARY KEY, "Name" TEXT, "CountryOfOrigin" TEXT, "NumberOfMembers" INT, "Website" TEXT, "Style" TEXT, "IsSigned" BOOLEAN, "ContactName" TEXT, "ContactPhoneNumber" TEXT);
 
 ALTER TABLE "Albums" ADD COLUMN "BandId" INTEGER NULL REFERENCES "Bands" ("Id");
 
