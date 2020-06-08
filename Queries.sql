@@ -6,7 +6,7 @@ ALTER TABLE "Albums" ADD COLUMN "BandId" INTEGER NULL REFERENCES "Bands" ("Id");
 
 INSERT INTO "Bands" ("Name", "CountryOfOrigin", "NumberOfMembers", "Website", "Style", "IsSigned", "ContactName", "ContactPhoneNumber") VALUES ('Migos', 'USA', '3', 'Migos.com', 'Hip-Hop', 'True', 'Tahee', '727-299-9999');
 
-SELECT * FROM "Band";
+SELECT * FROM "Bands";
 
 INSERT INTO "Albums" ("Title", "IsExplicit", "ReleaseDate", "BandId") VALUES ('Culture II', 'True', '2016-02-01', '1');
 
@@ -27,5 +27,9 @@ SELECT * FROM "Albums" ORDER BY "Albums"."ReleaseDate";
 SELECT * FROM "Bands" WHERE "IsSigned" = 'true';
 
 SELECT * FROM "Bands" WHERE "IsSigned" = 'false';
+
+INSERT INTO "Bands" ("Name", "CountryOfOrigin", "NumberOfMembers", "Website", "Style", "IsSigned", "ContactName", "ContactPhoneNumber") VALUES ('Linkin Park', 'USA', '8', 'LinkinPark.com', 'Rock', 'False', 'Riri', '727-300-0002');
+
+
 
 
